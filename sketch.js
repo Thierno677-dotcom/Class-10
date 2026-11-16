@@ -2,6 +2,7 @@
 let para
 let slider
 let sliderValue = 0;
+let heading
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -10,6 +11,9 @@ function setup() {
   para = createP('this is the text on the webpage and was made with p5');
   // Move the position call inside setup():
   para.position(0, 20);
+
+  heading = createElement('h2', 'Webpage heading')
+  heading.position(0, 50)
 
   //adjusting the css with javascript 
   //any styles applied with js will override any styles in css
